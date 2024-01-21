@@ -13,18 +13,13 @@ for controlling multiple vehicles at the same time.
 If you require this functionality you should check out the other libraries mentioned above.
 
 ## Installation
-As Procdrive does not have a pip repository yet, the install process is a little involved:
-```sh
-git clone https://github.com/PascalRombach/procdrive.git
-cd procdrive
-```
 ### Linux
 ```sh
-python3 -m pip install .
+python3 -m pip install procdrive
 ```
 ### Windows
 ```sh
-py -m pip install .
+py -m pip install procdrive
 ```
 
 ## Code Example
