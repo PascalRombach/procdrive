@@ -12,9 +12,9 @@ from easydrive import (
     TrackPieceType,
     Lights,
     Lane3,
-    Lane4,
-    errors,
+    Lane4
 )
+from anki.errors import *
 from concurrent.futures import TimeoutError
 
 
