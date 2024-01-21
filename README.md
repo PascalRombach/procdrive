@@ -11,3 +11,17 @@ such as object orientation and exception handling.
 Since Procdrive is not object-oriented, it does not provide support 
 for controlling multiple vehicles at the same time.
 If you require this functionality you should check out the other libraries mentioned above.
+
+## Code Example
+Coding in procdrive is very simple. 
+The following code scans the current map in and then reports the track pieces in order.
+```py
+from procdrive import *
+
+connect()
+scan()
+
+set_speed(300)
+while True:
+    print(wait_for_track_change())
+```
