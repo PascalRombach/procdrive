@@ -23,6 +23,7 @@ _P = _ParamSpec('_P')
 
 _control = _Controller()
 _vehicle: _Vehicle|None = None
+_track_piece_change_callback: _Callable|None = None
 
 
 @_atexit.register
@@ -69,3 +70,5 @@ get_current_lane4: _Callable[[], Lane4|None] = _wrap_vehicle_property("current_l
 get_vehicle_id: _Callable[[], int] = _wrap_vehicle_property("id")
 
 scan = _wrap_vehicle(_control.scan)  # This seems dirty, but it's actually legal
+call_on_track_piece_change = _wrap_vehicle(_Vehicle.track_piece_change)
+remove_track_piece_watcher = _wrap_vehicle(_Vehicle.remove_track_piece_watcher)
