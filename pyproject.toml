@@ -21,7 +21,7 @@ keywords = [
 ]
 
 dependencies = [
-    "py-easydrive"
+    "py-easydrive>=1.0.0"
 ]
 
 [project.urls]
